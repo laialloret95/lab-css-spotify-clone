@@ -6,3 +6,102 @@ Green: #00B172
 White: #FFF
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@300;400;700&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
+
+/* General styles */
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    color: #1A1A1A;
+    font-weight: 300;
+}
+
+.container {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+/* Nav Bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.links li {
+    display: inline;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+/* Header */
+#header {
+    background-image: url(/Users/laialloret/Desktop/web-dev/week-1/lab-css-spotify-clone/images/landing.jpg);
+    background-size: 100%;
+    height: 900px;
+    position: relative;
+    border-style: solid;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header .content {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#header p {
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+/* Value Section */
+#value {
+    margin: 10px 10px;
+}
+
+#value .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#value .value-items {
+    display: flex;
+    flex-direction: row;
+}
+
+#value .value-item img {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
