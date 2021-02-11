@@ -10,9 +10,10 @@ White: #FFF
 
 /* General styles */
 html {
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    line-height: 2em;
+    line-height: 1.5em;
+    font-weight: 300;
     color: #1A1A1A;
     font-weight: 300;
 }
@@ -31,8 +32,13 @@ a {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 500;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 550;
 }
 
 /* Nav Bar */
@@ -50,7 +56,6 @@ h1 {
 
 .links li {
     display: inline;
-    font-size: 1.5rem;
     padding: 15px;
 }
 
@@ -81,27 +86,108 @@ h1 {
 #header p {
     line-height: 1.5em;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 /* Value Section */
-#value {
-    margin: 10px 10px;
-}
-
 #value .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    margin-bottom: 80px
+}
+
+.value-title {
+    border-bottom: 5px solid #00B172;
 }
 
 #value .value-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#value .value-item {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
 }
 
 #value .value-item img {
-    height: 80px;
-    width: 80px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+#value .icon {
+    text-align: center;
+}
+
+#value .value-info {
+    text-align: center;
+}
+
+#value h3 {
+    color: #00B172;
+    margin:0;
+}
+
+/* Green Section */
+
+
+#green .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    overflow: hidden;
+    margin: 80px 100px;
+    background: #00B172;
+    color: #FFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position:relative;
+}
+
+#green .col-left {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#green .col-left h2 {
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #FFF;
+}
+
+#green .col-right {
+    flex-basis: 40%;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#green .col-right img {
+    max-width: 400px;
+}
+
+#green .spotify-logo img {
+    height: 200px;
+    width: 200px;
+}
+
+#green .spotify-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
